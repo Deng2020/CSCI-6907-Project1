@@ -1,38 +1,5 @@
 function NMI = getNMI(A,B)
-% call: 
-% 
-%         NMI = getNMI(A,B)
-%         
-% This function computes the Normalized Mutual Information (NMI) between 
-% 2 modular partitions or community structures given in vectors A and B.
-% NMI is a measure of the similarity between the two graph partitions, and 
-% its interpretation follows that of canonical Mutual Information, i.e. 
-% assuming that I have complete knowledge of partition A, how much knowledge 
-% can I get, from A, about partition B? If A and B are identical, then 
-% NMI = 1, whereas if A and B are independent, NMI --> 0.
-% 
-% INPUT
-% 
-%      A    :   Community partition of graph A *
-%      B    :   Community partition of graph B *
-% 
-%      * A and B are N-length vectors, where each i-th element is the integer 
-%        labeling the k-th community to which node i-th was assigned.
-%        
-%        
-% OUTPUT
-% 
-%      NMI  :   Normalized Mutual Information 
-%      
-%      
-%     
-% References:
-% [1] Kuncheva & Hadjitodorov, 2004, IEEE Intern. Conf. on Syst. Man and Cybern.
-% [2] Alexander-Bloch et al., 2012, NeuroImage
-% 
-% 
-% R. G. Bettinardi
-% ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 if nargin < 2
     error('One of the two inputs is missing !!!')
