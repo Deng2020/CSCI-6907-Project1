@@ -13,7 +13,7 @@ img2 = round(255*img2);
         for s=1:m
             for t=1:n
                 x=img1(s,t)+1;y=img2(s,t)+1;
-                histq(x,y)=histq(x,y)+1;
+                histq(x,y)=histq(x,y)+1; 
             end
         end
         p=histq./sum(sum(histq));
