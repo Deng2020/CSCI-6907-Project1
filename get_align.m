@@ -1,5 +1,5 @@
 function [row_shift_re,col_shift_re] = get_align(ima,imb)
-%imaÎª´ıÆ¥Åä£¬imbÎªÄ£°å
+
 [m,n] = size(ima);
 max_nmi=0;
 row_shift_re =0;
