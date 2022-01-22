@@ -9,7 +9,7 @@ A = reshape(A,1,im_size);
 B = reshape(B,1,im_size);
 switch method
     case 1
-    % 参考http://www.cnblogs.com/ziqiao/archive/2011/12/13/2286273.html#3350670
+
         if length( A ) ~= length( B)
             error('length( A ) must == length( B)');
         end
@@ -49,7 +49,7 @@ switch method
         NMI = 2 * MI / (Hx+Hy);
 
 case 2
-    % 使用accumarray方法 
+   
     A=A(:);
     B=B(:);
     if length(A)~=length(B)
@@ -62,7 +62,7 @@ case 2
     Pa=repmat(pa,1,size(Pab,2));
     Pb=repmat(pb,size(Pab,1),1);
     MI=sum(sum(Pab.*log2((Pab+eps)./(Pa.*Pb+eps)+eps)));
-    Ha=-sum(pa.*log2(pa+eps));% 熵
+    Ha=-sum(pa.*log2(pa+eps));% 矛脴
     Hb=-sum(pb.*log2(pb+eps));
     NMI=2*MI/(Ha+Hb);
 end
